@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Helmix - українська команда розробників і дизайнерів, що створює сучасні сайти на замовлення.">
+  <title>Helmix - розробка сайтів</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas class="ambient-canvas" id="ambientCanvas" aria-hidden="true"></canvas>
+  <div class="noise-layer" aria-hidden="true"></div>
+
+  <header class="site-header" data-reveal>
+    <a class="brand" href="#home" aria-label="Helmix на головну">
+      <span class="brand-mark">Hx</span>
+      <span>Helmix</span>
+    </a>
+    <nav class="site-nav" aria-label="Основна навігація">
+      <a href="#home">Головна</a>
+      <a href="#about">Про нас</a>
+      <a href="#projects">Роботи</a>
+      <a href="#services">Послуги</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <a class="nav-cta" href="https://t.me/PalmixPTC" target="_blank" rel="noreferrer">Замовити сайт</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content" data-reveal>
+        <p class="eyebrow">Українська web-команда</p>
+        <h1>Helmix створює сайти, які виглядають дорого і працюють швидко.</h1>
+        <p class="hero-text">
+          Розробляємо односторінкові сайти, портфоліо, промо-сторінки та інтерфейси під ключ:
+          від дизайну й анімацій до чистої адаптивної верстки.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#contacts">
+            <span>Обговорити проєкт</span>
+          </a>
+          <a class="button ghost" href="#projects">
+            <span>Дивитись роботи</span>
+          </a>
+        </div>
+        <div class="hero-stats" aria-label="Переваги Helmix">
+          <div>
+            <strong data-count="21">0</strong>
+            <span>днів безкоштовних правок</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>підтримка менеджера</span>
+          </div>
+          <div>
+            <strong data-count="100">0</strong>
+            <span>% передача коду</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="code-window">
+          <div class="window-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>helmix.studio</p>
+          </div>
+          <pre><code id="typedCode"></code><span class="caret"></span></pre>
+        </div>
+        <div class="floating-panel panel-two">
+          <span>pixel perfect</span>
+          <strong>CSS + JS</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Про нас</p>
+        <h2>Двоє людей, одна ціль: зробити сайт, який хочеться показувати.</h2>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card tilt-card" data-reveal>
+          <div class="avatar avatar-dev" aria-hidden="true">
+            <span>P</span>
+            <div class="avatar-glow"></div>
+          </div>
+          <div class="team-copy">
+            <p class="role">(PalmixPTC)</p>
+            <h3>Web-розробник</h3>
+            <p>
+              Перетворюю дизайн-макети на чистий, швидкий і зручний код. Налаштовую адаптивність,
+              анімації, форми, логіку сторінок і роблю так, щоб сайт однаково добре працював на телефоні та комп'ютері.
+            </p>
+          </div>
+        </article>
+
+        <article class="team-card tilt-card" data-reveal>
+          <div class="avatar avatar-design" aria-hidden="true">
+            <span>A</span>
+            <div class="avatar-glow"></div>
+          </div>
+          <div class="team-copy">
+            <p class="role">(alenxlis_zqr)</p>
+            <h3>Web-дизайнер</h3>
+            <p>
+              Продумую композицію, типографіку, кольори та логіку інтерфейсу. Створюю візуальну мову,
+              у якій продукт виглядає сучасно, зрозуміло і з відчуттям преміального стилю.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Роботи</p>
+        <h2>Типи проєктів, які можемо зібрати під вашу задачу.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card tilt-card" data-reveal>
+          <div class="project-preview shop-preview" aria-hidden="true">
+            <div class="mock-browser">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            </div>
+            <div class="profile-mock">
+              <div class="profile-person">
+                <i></i>
+              </div>
+              <div class="profile-copy">
+                <strong>Portfolio</strong>
+                <span></span>
+                <span></span>
+                <em>Contact</em>
+              </div>
+            </div>
+          </div>
+          <h3>Сайт-візитка або лендінг</h3>
+          <p>Односторінковий сайт для послуг, особистого бренду або реклами: швидка структура, зрозумілі блоки, форма заявки та адаптивність.</p>
+        </article>
+
+        <article class="project-card tilt-card" data-reveal>
+          <div class="project-preview studio-preview" aria-hidden="true">
+            <div class="shop-card-ui">
+              <div class="shop-product-grid">
+                <div class="shop-product"></div>
+                <div class="shop-product"></div>
+                <div class="shop-product"></div>
+                <div class="shop-product"></div>
+              </div>
+              <div class="shop-bottom-bar">
+                <div class="shop-cart-icon"></div>
+                <span class="shop-price">₴ 1 290</span>
+                <div class="shop-buy-btn"></div>
+              </div>
+            </div>
+          </div>
+          <h3>Інтернет-магазин</h3>
+          <p>Каталог товарів, картки, кошик, заявки, база даних і зручна логіка покупки без зайвих технологій там, де вони не потрібні.</p>
+        </article>
+
+        <article class="project-card tilt-card" data-reveal>
+          <div class="project-preview hub-preview" aria-hidden="true">
+            <div class="web-mark">WEB</div>
+          </div>
+          <h3>Розробка сайту під будь-яку ціль</h3>
+          <p>Від простої сторінки до складнішої системи: кабінети, бази даних, API, адмін-панелі, Django або FastAPI під конкретну задачу.</p>
+        </article>
+
+        <article class="project-card tilt-card" data-reveal>
+          <div class="project-preview bot-preview" aria-hidden="true">
+            <div class="bot-bubble one"></div>
+            <div class="bot-bubble two"></div>
+            <div class="bot-core"></div>
+            <div class="bot-bubble three"></div>
+          </div>
+          <h3>Telegram-боти</h3>
+          <p>Боти для заявок, меню, сповіщень, консультацій, простих продажів і автоматизації процесів прямо в Telegram.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Послуги</p>
+        <h2>Рішення для запуску, продажів і автоматизації бізнесу.</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card" data-reveal>
+          <div class="service-icon" aria-hidden="true">48H</div>
+          <h3>Сайт-візитка за 48 годин</h3>
+          <p>Ваше замовлення ставиться в пріоритет: швидко збираємо акуратний сайт-візитку з базовим дизайном, адаптивністю і контактами.</p>
+          <span class="service-time">48 годин</span>
+        </article>
+        <article class="service-card" data-reveal>
+          <div class="service-icon" aria-hidden="true">WEB</div>
+          <h3>Розробка сайтів</h3>
+          <p>Сайти-візитки, лендінги, портфоліо та корпоративні сторінки. Дизайн, адаптивність і логіка сторінки входять у роботу.</p>
+          <span class="service-time">До 7 днів</span>
+        </article>
+        <article class="service-card" data-reveal>
+          <div class="service-icon" aria-hidden="true">BOT</div>
+          <h3>Telegram-боти</h3>
+          <p>Боти для заявок, консультацій, меню, сповіщень, простих продажів і автоматизації рутини. Робимо саме Telegram-ботів.</p>
+          <span class="service-time">До 7 днів</span>
+        </article>
+        <article class="service-card" data-reveal>
+          <div class="service-icon" aria-hidden="true">SHOP</div>
+          <h3>Веб-магазини</h3>
+          <p>Каталог, картки товарів, кошик, заявки, база даних і зрозуміла структура покупки. Підбираємо рішення без зайвої складності.</p>
+          <span class="service-time">До 14 днів</span>
+        </article>
+        <article class="service-card" data-reveal>
+          <div class="service-icon" aria-hidden="true">API</div>
+          <h3>Backend і API</h3>
+          <p>Підключаємо серверну логіку, бази даних, форми, обробку заявок, авторизацію та інтеграції під конкретний сценарій.</p>
+          <span class="service-time">Під задачу</span>
+        </article>
+        <article class="service-card" data-reveal>
+          <div class="service-icon" aria-hidden="true">VPS</div>
+          <h3>Хостинг і запуск</h3>
+          <p>Допомагаємо виставити сайт на хороший хостинг або VPS, підключити домен, перевірити форми, швидкість і стабільність.</p>
+          <span class="service-time">Під ключ</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section tech" id="tech">
+      <div class="tech-shell" data-reveal>
+        <div>
+          <p class="eyebrow">Підхід</p>
+          <h2>Адекватна ціна без зайвих технологій.</h2>
+          <p>
+            Ми доступна команда: не накручуємо складність там, де достатньо простого й надійного рішення.
+            Підбираємо технології під задачу, щоб сайт було легко підтримувати, швидко запускати і реально використовувати.
+            Зараз активно працюємо на портфоліо, тому робимо проєкти максимально якісно, уважно і по суті.
+          </p>
+        </div>
+        <div class="tech-stack" aria-label="Основні технології">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Git</span>
+          <span>Python</span>
+          <span>Django</span>
+          <span>PostgreSQL</span>
+          <span>Telegram Bots (Aiogram)</span>
+          <span>FastAPI</span>
+          <span>REST API</span>
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>VPS-сервери</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section advantages" id="advantages">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Гарантії</p>
+        <h2>Працюємо прозоро і залишаємо проєкт під вашим контролем.</h2>
+      </div>
+
+      <div class="advantage-list">
+        <article class="advantage-card" data-reveal>
+          <div class="advantage-icon" aria-hidden="true">DOC</div>
+          <div>
+            <h3>Договір та прозорість</h3>
+            <p>Умови, вартість і терміни фіксуємо до старту. Без прихованих платежів і раптових доплат у середині роботи.</p>
+          </div>
+        </article>
+        <article class="advantage-card" data-reveal>
+          <div class="advantage-icon" aria-hidden="true">21</div>
+          <div>
+            <h3>21 день безкоштовних правок</h3>
+            <p>Після здачі проєкту допомагаємо довести дрібні деталі до ідеалу, щоб сайт спокійно пережив перший запуск.</p>
+          </div>
+        </article>
+        <article class="advantage-card" data-reveal>
+          <div class="advantage-icon" aria-hidden="true">24</div>
+          <div>
+            <h3>24/7 підтримка менеджера</h3>
+            <p>Ви завжди розумієте, на якому етапі проєкт. Відповідаємо на питання, узгоджуємо зміни і тримаємо зв'язок.</p>
+          </div>
+        </article>
+        <article class="advantage-card" data-reveal>
+          <div class="advantage-icon" aria-hidden="true">SRC</div>
+          <div>
+            <h3>Відкритий вихідний код</h3>
+            <p>Передаємо файли проєкту без прив'язки до закритої платформи. Інший розробник зможе продовжити роботу за потреби.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process" aria-label="Процес роботи">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Процес</p>
+        <h2>Працюємо прозоро, без хаосу й нескінченних переробок.</h2>
+      </div>
+      <div class="timeline" data-reveal>
+        <div class="timeline-item">
+          <span>01</span>
+          <h3>Бриф</h3>
+          <p>Визначаємо ціль сайту, стиль, блоки, дедлайни й потрібні контакти.</p>
+        </div>
+        <div class="timeline-item">
+          <span>02</span>
+          <h3>Дизайн</h3>
+          <p>Збираємо візуальну систему: кольори, типографіку, композицію та стани.</p>
+        </div>
+        <div class="timeline-item">
+          <span>03</span>
+          <h3>Розробка</h3>
+          <p>Верстаємо, додаємо анімації, перевіряємо мобільну версію та швидкість.</p>
+        </div>
+        <div class="timeline-item">
+          <span>04</span>
+          <h3>Запуск</h3>
+          <p>Передаємо готовий сайт, допомагаємо розмістити його онлайн і пояснюємо керування.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <div class="contact-shell" data-reveal>
+        <div>
+          <p class="eyebrow">Контакти</p>
+          <h2>Готові зібрати сайт для вашої ідеї.</h2>
+          <p>
+            Напишіть нам у Telegram або перегляньте Instagram. Коротко розкажіть, який сайт потрібен,
+            які блоки хочете бачити та який стиль подобається.
+          </p>
+        </div>
+        <form class="lead-form" id="leadForm">
+          <label>
+            <span>Ваше ім'я</span>
+            <input type="text" name="name" placeholder="Наприклад, Олександр" required>
+          </label>
+          <label>
+            <span>Telegram</span>
+            <input type="text" name="telegram" placeholder="@username" required>
+          </label>
+          <label>
+          <span>Що потрібно?</span>
+            <select name="service" required>
+              <option value="">Оберіть послугу</option>
+              <option>Сайт-візитка за 48 годин</option>
+              <option>Розробка сайту</option>
+              <option>Telegram-бот</option>
+              <option>Веб-магазин</option>
+              <option>Backend/API для проєкту</option>
+              <option>Хостинг і запуск</option>
+            </select>
+          </label>
+          <label>
+            <span>Коротко про задачу</span>
+            <textarea name="message" rows="4" placeholder="Опишіть ідею, дедлайн або приклад сайту"></textarea>
+          </label>
+          <button class="button primary" type="submit">Відправити заявку</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+        <div class="contact-links">
+          <a class="contact-link" href="https://t.me/PalmixPTC" target="_blank" rel="noreferrer">
+            <span>Telegram</span>
+            <strong>@PalmixPTC</strong>
+            <small>Веб-розробник</small>
+          </a>
+          <a class="contact-link" href="https://t.me/alenxlis_zqr" target="_blank" rel="noreferrer">
+            <span>Telegram</span>
+            <strong>@alenxlis_zqr</strong>
+            <small>Дизайнер</small>
+          </a>
+          <a class="contact-link instagram" href="https://www.instagram.com/mr_fsociety_r/" target="_blank" rel="noreferrer">
+            <span>Instagram</span>
+            <strong>@mr_fsociety_r</strong>
+            <small>Портфоліо та оновлення</small>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Helmix, українська команда web-розробки.</p>
+    <a href="#home">Повернутися нагору</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
